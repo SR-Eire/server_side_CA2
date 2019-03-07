@@ -9,7 +9,7 @@ document.addEventListener("turbolinks:load", function timeOfDayGreeting() {
   else if (hourNow > 12) {
     greeting = "Good Afternoon!";
   }
-  else if (hourNow > 0) {
+  else if (hourNow > 00) {
     greeting = "Good Morning!";
   }
   else {

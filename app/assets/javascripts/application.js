@@ -10,6 +10,10 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require custom
+//= require greeting
+//= require jquery
+//= require test
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks

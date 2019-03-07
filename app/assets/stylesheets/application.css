@@ -122,6 +122,37 @@ section .container #intro {
   font-size: 20px;
 }
 
+/* About Page Styling */
+
+/* Create two equal columns that floats next to each other */
+
+.column1 {
+  margin-top: 40px;
+  margin-right: 10px;
+  float: left;
+  width: 49%;
+  padding: 10px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.column2 {
+  margin-top: 40px;
+  float: left;
+  width: 49%;
+  padding: 10px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Footer */
 
 footer {
@@ -148,7 +179,7 @@ footer {
 
 /* Media Queries */
 
-@media(max-width: 768px) {
+@media(max-width: 760px) {
 
   header #branding,
   header nav,

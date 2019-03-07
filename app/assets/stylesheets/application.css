@@ -1,0 +1,174 @@
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  /*can also be done as follows: font: 15px/1.5 Arial, Helvetica, sans-serif*/
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/*Global */
+
+.container {
+
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+ul {
+
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+
+/* Header */
+
+header {
+
+  background: #3c3c3b;
+  color: #f4f4f4;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #f4f4f4 3px solid;
+
+}
+
+header a {
+
+  color: #f4f4f4;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 20px;
+
+}
+
+
+header li {
+
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+  margin-right: 20px;
+
+}
+
+header #branding {
+
+  float: left;
+
+}
+
+header #branding h1 {
+
+  margin: 0;
+}
+
+header nav {
+
+  float: right;
+  margin-top: 10px;
+
+}
+
+header .highlight,
+header .current a {
+
+  color: #db3069;
+  font-weight: normal;
+
+}
+
+header a:hover {
+
+  color: #db3069;
+  text-decoration: underline;
+
+}
+
+/* Intro */
+
+section .container #intro {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase {
+
+  min-height: 510px;
+  background: url("background.jpg")no-repeat;
+  text-align: center;
+  color: #f4f4f4;
+
+}
+
+#showcase h1 {
+
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+
+}
+
+#showcase p {
+
+  font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+
+  padding: 15px;
+  color: #f4f4f4;
+  background-color: #db3069;
+  text-align: center;
+  border-top: #f4f4f4 3px solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* Text alignment */
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+
+  header #branding,
+  header nav,
+  header nav li {
+
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+
+  header {
+
+    padding-bottom: 20px;
+
+  }
+
+  #showcase h1 {
+
+    margin-top: 40px;
+
+  }
+
+}

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   root 'static_pages#home'
   get '/about' => 'static_pages#about'
   get '/products' => 'static_pages#products'

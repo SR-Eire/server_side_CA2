@@ -1,8 +1,11 @@
 $(document).ready(function() {
-  $("#hide").click(function() {
-    $("h2").hide();
-  });
   $("#show").click(function() {
-    $("h2").show();
+    $(".column1").css("visibility", "visible");
+  });
+});
+
+$(document).ready(function() {
+  $("#again").click(function() {
+    $(".column2").css("visibility", "visible");
   });
 });

@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
  <div id="itemsContainer">
+  <div>
+   <button id="fade" role ="button">See Our Products</button>
+  </div>
   
-  <h1>Items</h1>
      
       <% @items.each do |item| %>
       <div class="itemhols">
@@ -10,7 +12,7 @@
        
        <%= link_to (image_tag item.image_url, :class => "itemholsIm"), item %>
         <p><%= item.description %></p>
-       <p>Price <%= number_to_currency(item.price, :unit => "€") %>
+        <p>Price <%= number_to_currency(item.price, :unit => "€") %>
         <br>
         Model: <%= item.model %></p>
        
@@ -26,3 +28,6 @@
 </div>
 <%= link_to 'New Item',  new_item_path, :class => "itemButton", :role => "button" %>
 <br>
+
+<script src="../javascripts/fade.js"></script>
+<script src="../javascripts/jquery.js"></script>

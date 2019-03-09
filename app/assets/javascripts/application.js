@@ -13,7 +13,8 @@
 //= require custom
 //= require greeting
 //= require jquery
-//= require test
+//= require appear
+//= require fade
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
